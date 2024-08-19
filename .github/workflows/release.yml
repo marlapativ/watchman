@@ -168,31 +168,3 @@ jobs:
         tags: |
           user/app:latest
           user/app:${{ github.ref_name }}
-
-    # - name: Docker Hub
-    #   run: make docker-hub
-
-    # - name: Docker Openshift
-    #   run: make docker-openshift
-
-    # - name: Docker Static
-    #   run: make docker-static
-
-    # - name: Docker watchmantest
-    #   run: make docker-watchmantest
-
-    # - name: Docker Push
-    #   run: |+
-    #       echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-    #       make release-push
-    #   env:
-    #     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-    #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-
-    # - name: Quay.io Push
-    #   run: |+
-    #       echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin quay.io
-    #       make quay-push
-    #   env:
-    #     DOCKER_USERNAME: ${{ secrets.QUAY_USERNAME }}
-    #     DOCKER_PASSWORD: ${{ secrets.QUAY_PASSWORD }}
